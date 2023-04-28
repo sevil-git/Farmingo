@@ -132,3 +132,11 @@
       font-size: 30px;
       font-weight: 600;
   }
+  .btn-success{
+    background-color: #aedc52;
+    width: 15rem;
+    height: 4rem;
+    border: none;
+    border-radius: 15px;
+    margin-top: 3rem;
+  }
