@@ -485,7 +485,7 @@ input {
   .right form input, .right form textarea{
     width: 100%;
     font-size: 1.0625rem;
-    background: #151515;
+    background: #fdfdfd;
     padding-left: 10px;
     border: 1px solid #222222;
   }
@@ -498,22 +498,24 @@ input {
   }
   .right form .btn{
     margin-top: 10px;
-    width: 100%;   
+    width: 100%; 
+    border-radius: 4px;  
   }
 
   .right form .btn button{
+    color: #fdfdfd;
     height: 40px;
     width: 100%;
     border: none;
     outline: none;
-    background: var(--dark-color);
+    background: linear-gradient(45deg,#aedc52,#18311f);
     font-size: 1.0625rem;
     font-weight: 500;
     cursor: pointer;
     transition: .3s;
   }
   .right form .btn button:hover{
-    background: lightcyan;
+    background: linear-gradient(45deg,#18311f, #aedc52);
   }
   .bottom center{
     padding: 5px;
