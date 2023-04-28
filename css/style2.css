@@ -218,6 +218,8 @@ input {
     align-items: center;
     justify-content: center;
 }
+
+
 /* !HERO */
 .hero{
     padding: 6rem 0 5rem;
@@ -318,6 +320,9 @@ input {
 .button-transparent:hover img,
 .button-transparent:focus img{
     transform: scale(1.1);
+}
+.hero .farmer-image{
+  align-items: center;
 }
 
 /* !IMAGE SLIDER */
