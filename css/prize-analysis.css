@@ -1,21 +1,20 @@
-.lower{
+.lower {
   text-align: center;
-    display:grid;
-    align-items: center;
-    justify-content: center
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 h1 {
   color: #aedc52;
 }
-a{
+a {
   color: #004651;
 }
 .grid-container {
-
   -moz-columns: 5 200px;
-       columns: 5 200px;
+  columns: 5 200px;
   -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
+  column-gap: 1.5rem;
   width: 90%;
   margin: 0 auto;
   margin-top: 10rem;
@@ -48,8 +47,8 @@ a{
   padding: 0;
   text-align: center;
   font-style: italic;
-}/*# sourceMappingURL=prize-analysis.css.map */
-.btn-success{
+} /*# sourceMappingURL=prize-analysis.css.map */
+.btn-success {
   background-color: #aedc52;
   width: 15rem;
   height: 4rem;

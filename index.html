@@ -43,16 +43,13 @@
                   <a href="#" class="list-link">Service</a>
               </li>
               <li class="list-item">
-                  <a href="shop1.html" class="list-link">Shop</a>
+                  <a href="shop2.html" class="list-link">Shop</a>
               </li>
               <li class="list-item">
                   <a href="price_analysis.html" class="list-link">Price Analysis</a>
               </li>
               <li class="list-item">
-                  <a href="#" class="list-link">Translator</a>
-              </li>
-              <li class="list-item">
-                  <a href="login.html" class="list-link">Login</a>
+                  <a href="login_final.html" class="list-link">Login</a>
               </li>
           </ul>
             <div class="search-box">
@@ -74,8 +71,10 @@
                         </svg> 
                     </button>
                 </form>
+               
             </div>
         </div>
+        <div id="google_translate_element" style="margin: 40px;"\></div>
      </header>
     <!-- !HERO -->
     <section class="hero">
@@ -97,9 +96,11 @@
                     
                 </div>
                 <div class="farmer-image">
-                      <a> 
-                        <img src="farmer.png" alt="farmer" class="immg" >
+                  <center>    
+                  <a> 
+                        <img src="images/farmer.png" alt="farmer" class="immg" >
                       </a>
+                    </center>
                     </div>
             </div>
         </div>
@@ -137,7 +138,7 @@
         <div class="row">
             <h2 class="section-heading">Our Services</h2>
           </div>
-          <div class="row">
+          <div class="row" style="display: flex; justify-content: center;">
             <div class="column">
               <div class="card">
                 <div class="icon-wrapper">
@@ -235,6 +236,13 @@
       </footer>
 
     <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
