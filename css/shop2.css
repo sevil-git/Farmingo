@@ -2,17 +2,23 @@
   margin: 0;
   padding: 0;
 }
-html,
-body {
-  height: 100%;
-  width: 100%;
-  background-image: url("images/bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
+
+
+
+.lower {
+  text-align: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: #aedc52;
+}
+a {
+  color: #004651;
 }
 
-.container {
+.container12 {
   /*border: 2px solid black;*/
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +31,7 @@ body {
 .card {
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  padding: 10px;
   border: 1px solid black;
   border-radius: 10px;
   margin: 5px;
@@ -36,11 +42,17 @@ body {
   border-radius: 15px;
   overflow: hidden;
 }
+
+.image img{
+  height: 250px;
+  width: 300px;
+}
+
 .cost {
-  color: rgb(38, 230, 38);
+  color: rgb(30, 36, 30);
   padding: 5px;
 }
-button {
+.shopNow {
   border: none;
   background-color: #aedc52;
   background-image: linear-gradient(45deg, #aedc52, #08ac4b);
@@ -60,6 +72,7 @@ button {
 .card:hover {
   box-shadow: 2px 2px 2px 2px rgb(86, 84, 84);
 }
-button:hover {
+.shopNow:hover {
   box-shadow: 2px 2px 2px 2px rgb(86, 84, 84);
 }
+
