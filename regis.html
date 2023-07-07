@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<!---Coding By CodingLab | www.codinglabweb.com--->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!--<title>Registration Form in HTML CSS</title>-->
-    <!---Custom CSS File--->
-    <link rel="stylesheet" href="css/style1.css" />
+    <title>Farmingo | Registeration</title>
+    <link rel="stylesheet" href="regis.css" />
     <style>
       body {
         background-image: url("images/bg.jpg");
@@ -18,78 +14,131 @@
     </style>
   </head>
   <body>
-    <section class="container">
-      <header>Registration Form</header>
-      <form action="#" class="form">
-        <div class="input-box">
-          <label>Full Name</label>
-          <input type="text" placeholder="Enter full name" required />
+    <div id="google_translate_element" style="margin: 40px;" ></div>
+    <div class="cont">
+    <div class="container">
+      <div class="side-bar">
+        <div>
+          <button class="sidebar-btn" onclick="viewDetails()">
+            <h3>Basic Details</h3>
+            <p>Name, Occupation, etc</p>
+          </button>
         </div>
+        <div class="Upload-Doc" >
+          <button class="sidebar-btn" onclick="viewDocument()">
+            <h3>Upload Documents</h3>
+            <p>KYC Documents, Cancelled Cheaque</p>
+          </button>
+        </div>
+        <div class="Commodities">
+          <button class="sidebar-btn">
+            <h3>Add Commodities</h3>
+            <p>Wheat, Maze, Turmeric, Spices, Pulses or others</p>
+          </button>
+        </div>
+      </div>
 
-        <div class="input-box">
-          <label>Email Address</label>
-          <input type="text" placeholder="Enter email address" required />
+      <div id="Basic-Detail" style="display: block;">
+        <h3>Tell us more about you</h3>
+        <p>Select a profile type</p>
+        <div class="img-farmer-customer">
+          <img src="images/download (3).jpeg" alt="" srcset="" />
+          <img src="images/Customer1.jpg" alt="" srcset="" />
         </div>
+        <div class="form">
+          <div class="name-pin">
+            <div class="name">
+              Your name*
+              <input type="text" name="Name" placeholder="Enter Your Name" />
+            </div>
+            <div class="email">
+              Email ID
+              <input type="email" name="Email" placeholder="example@domain" />
+            </div>
+            <div class="pin">
+              PIN Code*
+              <input type="number" name="pin" placeholder="Eg: 110115" />
+            </div>
+            </p>
+          </div>
+          <div class="Adress-State">
+            <div class="address">
+              Your Address
+              <input
+                type="text"
+                name="Address"
+                placeholder="Please enter address here"
+              />
+            </div>
+            <div class="state">
+              State* <input type="text" name="State" placeholder="Your state" />
+            </div>
+          </div>
 
-        <div class="column">
-          <div class="input-box">
-            <label>Phone Number</label>
-            <input type="number" placeholder="Enter phone number" required />
+          <div class="dist-cit-tal">
+            <div class="dist">
+            District*
+            <input type="text" name="District" placeholder="Your District" />
           </div>
-          <div class="input-box">
-            <label>Birth Date</label>
-            <input type="date" placeholder="Enter birth date" required />
+          <div class="city">
+            City/Village*
+            <input
+              type="text"
+              name="city"
+              placeholder="Your City/ Town/ Village"
+            />
           </div>
-        </div>
-        <div class="gender-box">
-          <h3>Gender</h3>
-          <div class="gender-option">
-            <div class="gender">
-              <input type="radio" id="check-male" name="gender" checked />
-              <label for="check-male">male</label>
-            </div>
-            <div class="gender">
-              <input type="radio" id="check-female" name="gender" />
-              <label for="check-female">Female</label>
-            </div>
-            <div class="gender">
-              <input type="radio" id="check-other" name="gender" />
-              <label for="check-other">prefer not to say</label>
-            </div>
+          <div class="tal">
+            Taluka*
+            <input type="text" name="taluka" placeholder="Your Taluka" />
+          </div>
+          </div>
+          <div class="continue-btn">
+            <button onclick="viewDocument()">Continue</button>
           </div>
         </div>
-        <div class="input-box address">
-          <label>Address</label>
-          <input type="text" placeholder="Enter street address" required />
-          <input
-            type="text"
-            placeholder="Enter street address line 2"
-            required
-          />
-          <div class="column">
-            <div class="select-box">
-              <select>
-                <option hidden>Country</option>
-                <option>America</option>
-                <option>Japan</option>
-                <option>India</option>
-                <option>Nepal</option>
-              </select>
+      </div>
+    
+      <div id="Documents" style="display: none;">
+        <div class="logo-add">
+          <div class="image">
+            <img src="images/upload.png" alt="" srcset="" width="80px" >
+          </div>
+          <div class="insert">
+            <button>
+            <input type="file" name="Documents" placeholder="+ Select Documents">
+          </button>
+          </div>
+        </div>
+        <br>
+        <br>
+          Please upload the following
+
+          <div class="doc-img">
+            <div class="aadhar">
+              <img src="images/OIP.jpeg" alt="" srcset="" width="100px" height="50px">
+              <p>Aadhar Card</p>
             </div>
-            <input type="text" placeholder="Enter your city" required />
+              <div class="cheaque">
+                <img src="images/OIP (1).jpeg" alt="" srcset="" width="100px" height="50px">
+                <p>Cancelled Cheaque</p>
+              </div>
           </div>
-          <div class="column">
-            <input type="text" placeholder="Enter your region" required />
-            <input type="number" placeholder="Enter postal code" required />
-          </div>
-        </div>
-        <div class="button-group">
-          <button class="butto">Submit</button>
-          <br />
-          <br />
-          <a class="button" href="index.html" class="button">Back</a>
-        </div>
-      </form>
-    </section>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="register.js"></script>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+      </script>
+      
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    </script>
   </body>
 </html>

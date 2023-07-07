@@ -1,0 +1,139 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+.cont {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 30%;
+}
+.container {
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+}
+
+.sidebar-btn {
+  width: 90%;
+  height: 15%;
+  cursor: pointer;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  font-size: large;
+  margin: 0px;
+  position: relative;
+}
+
+.img-farmer-customer img {
+  width: 10%;
+  cursor: pointer;
+  border: 1px solid green;
+  border-radius: 50%;
+  height: 8%;
+  margin: 2px;
+}
+
+.form input {
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 2px;
+  background-color: transparent;
+  color: white;
+}
+
+.Adress-State,
+.name-pin,
+.dist-cit-tal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+
+.continue-btn {
+  margin: 2px;
+}
+.continue-btn button {
+  width: 20%;
+  padding: 10px;
+  margin: 15px;
+  background-color: rgb(217, 94, 94);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#Documents {
+  border: 2px solid green;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border-style: dashed;
+  border-radius: 10px;
+}
+.logo-add {
+  display: flex;
+  flex-direction: row;
+  margin: 4px;
+  justify-content: space-around;
+}
+
+.logo-add .image,
+.insert {
+  margin: 4px;
+}
+
+.insert button {
+  width: 100%;
+  height: 80%;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.doc-img {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+  justify-content: space-around;
+}
+.aadhar,
+.cheaque {
+  margin-right: 10%;
+}
+
+@media screen and (min-width: 768px) {
+  .cont {
+    margin-top: 10%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .cont {
+    margin-top: 1%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .side-bar {
+    display: flex;
+    flex-direction: row;
+  }
+  .sidebar-btn {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    border: 1px solid black;
+  }
+}
