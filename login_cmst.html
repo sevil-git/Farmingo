@@ -28,7 +28,7 @@
         </div>
         <br />
         <div class="input">
-          <input type="text" name="Name" id="Name" placeholder="Username" />
+          <input type="text" name="Name" id="UserName" placeholder="Username" />
           <br />
           <input
             type="password"
@@ -38,7 +38,8 @@
           />
         </div>
         <div class="login-btn">
-          <button>Login</button>
+          <input type="submit" value="Sign Up" id="signUp" name="signup_submit">
+          <!--<button id="signUp" name="signup_submit" value="Sign up">Login</button>-->
         </div>
         <p class="message">
           Not registered? <a href="regis.html">Create an account</a>
@@ -58,6 +59,58 @@
       </script>
       
       <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics.js";
+        import { getDatabase } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-firebase/auth.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAYEGJb1NcaXbGIy6J6k6PSI8pEA82a3l0",
+          authDomain: "farmingo-5938d.firebaseapp.com",
+          databaseURL: "https://farmingo-5938d-default-rtdb.firebaseio.com",
+          projectId: "farmingo-5938d",
+          storageBucket: "farmingo-5938d.appspot.com",
+          messagingSenderId: "15491461418",
+          appId: "1:15491461418:web:0518af579989e3fbdb2e53",
+          measurementId: "G-CGVRQ43DLN"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const database = getDatabase(app);
+        const auth = getAuth();
+
+  signUp.addEventListner('click',(e)=>{
+    var email = document.getElementById('UserName').value;
+    var password = document.getElementById('password').value; 
+
+    createUserWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    alert('User loginned successfully');
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+
+    alert(errorMessage);
+    // ..
+  });
+
+  });
+      </script>
       </body>
   </body>
 </html>

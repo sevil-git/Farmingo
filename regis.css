@@ -43,6 +43,11 @@ html {
   border-radius: 50%;
   height: 8%;
   margin: 2px;
+  transform: transition-duration(0.2s);
+}
+.img-farmer-customer img:hover {
+  width: 12%;
+  border: darkgreen;
 }
 
 .form input {
